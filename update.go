@@ -11,11 +11,10 @@ func update() {
 					if MyGame.Board[y][x-1] == 0 && MyGame.Board[y][x] != 0 {
 						MyGame.Board[y][x-1] = MyGame.Board[y][x]
 						MyGame.Board[y][x] = 0
-						if x+2 < 4 {
-							x++
-						}
+						x = len(MyGame.Board[y])
 
 					}
+
 				}
 
 			}
